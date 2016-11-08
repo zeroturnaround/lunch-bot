@@ -1,0 +1,15 @@
+{
+    "extends": "eslint:recommended",
+    "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true,
+        "es6": true
+    },
+    "globals": {
+        "console": true
+    },
+    "rules": {
+        "no-console": 0
+    }
+}
