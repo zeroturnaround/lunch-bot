@@ -1,0 +1,13 @@
+version: '3'
+services:
+  bot:
+    image: node:8.9
+    working_dir: /app
+    volumes:
+        - ./:/app
+    environment:
+      BOT_SLACK_API_KEY: ${SLACK_KEY}
+      BOT_FB_APP_ID: ${FB_APP}
+      BOT_FB_APP_SECRET: ${FB_SECRET}
+      BOT_SLACK_NAME: lunch
+    command: bash -c 'yarn && yarn start'
