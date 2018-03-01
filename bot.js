@@ -8,8 +8,9 @@ const sources = [
     new Facebook('unicorn_face', 'Pegasus', "RestoranPegasus"),
     new Facebook('bike', 'Rataskaevu 16', 'Rataskaevu16'),
     new Facebook('hole', 'Väike Rataskaevu 16', 'VaikeRataskaevu16'),
-    // new Facebook('elephant', 'Restoran Elevant', 'restoran.elevant'),
-    new Facebook('rose', 'Kohvik Roosi', 'kohvikRoosi')
+    new Facebook('leaves', 'Rahva Toit', 'rahvatoitttu'),
+    new URL("rahvatoit.ee/menuu/rahva-toit-roosikrantsi/")
+  // new Facebook('elephant', 'Restoran Elevant', 'restoran.elevant'),
 ];
 
 const lunchbot = new LunchBot({
