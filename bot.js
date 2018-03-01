@@ -1,5 +1,6 @@
 "use strict";
 const Facebook = require("./src/sources/Facebook");
+const Link = require("./src/sources/Link");
 const LunchBot = require("./src/Lunchbot");
 const config = require('config');
 
@@ -8,8 +9,8 @@ const sources = [
     new Facebook('unicorn_face', 'Pegasus', "RestoranPegasus"),
     new Facebook('bike', 'Rataskaevu 16', 'Rataskaevu16'),
     new Facebook('hole', 'Väike Rataskaevu 16', 'VaikeRataskaevu16'),
-    new Facebook('leaves', 'Rahva Toit', 'rahvatoitttu')
-  // new URL("http://rahvatoit.ee/menuu/rahva-toit-roosikrantsi/")
+    new Facebook('leaves', 'Rahva Toit', 'rahvatoitttu'),
+    new Link('leaves', 'Rahva toit', 'Come and eat', 'http://rahvatoit.ee/menuu/rahva-toit-roosikrantsi/')
   // new Facebook('elephant', 'Restoran Elevant', 'restoran.elevant'),
 ];
 
