@@ -13,7 +13,7 @@ module.exports = class Link {
     return {
       emoji: this.emoji,
       name: this.name,
-      message: message,
+      message: this.message,
       href: this.href
     };
   }
