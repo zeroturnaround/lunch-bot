@@ -1,10 +1,12 @@
 "use strict";
+// const url = require('url');
+
 module.exports = class Link {
-  constructor(emoji, name, message, url) {
-    emoji: emoji;
-    name: name;
-    message: message
-    href: new URL(url);
+  constructor(emoji, name, message, link) {
+    this.emoji = emoji;
+    this.name = name;
+    this.message = message;
+    this.href = link;
   }
 
   fetchData() {
@@ -12,7 +14,7 @@ module.exports = class Link {
       emoji: this.emoji,
       name: this.name,
       message: message,
-      href: this.url
+      href: this.href
     };
   }
-}
+};
