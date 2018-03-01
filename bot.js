@@ -9,7 +9,6 @@ const sources = [
     new Facebook('bike', 'Rataskaevu 16', 'Rataskaevu16'),
     new Facebook('hole', 'Väike Rataskaevu 16', 'VaikeRataskaevu16'),
     // new Facebook('elephant', 'Restoran Elevant', 'restoran.elevant'),
-    new Facebook('rose', 'Kohvik Roosi', 'kohvikRoosi')
 ];
 
 const lunchbot = new LunchBot({
