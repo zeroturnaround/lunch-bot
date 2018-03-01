@@ -1,5 +1,4 @@
 "use strict";
-// const url = require('url');
 
 module.exports = class Link {
   constructor(emoji, name, message, link) {
