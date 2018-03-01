@@ -9,7 +9,7 @@ const sources = [
     new Facebook('bike', 'Rataskaevu 16', 'Rataskaevu16'),
     new Facebook('hole', 'Väike Rataskaevu 16', 'VaikeRataskaevu16'),
     new Facebook('leaves', 'Rahva Toit', 'rahvatoitttu'),
-    new URL("rahvatoit.ee/menuu/rahva-toit-roosikrantsi/")
+    new URL("http://rahvatoit.ee/menuu/rahva-toit-roosikrantsi/")
   // new Facebook('elephant', 'Restoran Elevant', 'restoran.elevant'),
 ];
 
