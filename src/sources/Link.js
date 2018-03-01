@@ -1,18 +1,19 @@
 "use strict";
+
 module.exports = class Link {
-  constructor(emoji, name, message, url) {
+  constructor(emoji, name, message, link) {
     this.emoji = emoji;
     this.name = name;
     this.message = message;
-    this.href = new URL(url)
+    this.href = link;
   }
 
   fetchData() {
     return {
       emoji: this.emoji,
       name: this.name,
-      message: message,
-      href: this.url
+      message: this.message,
+      href: this.href
     };
   }
-}
+};

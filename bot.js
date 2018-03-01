@@ -9,8 +9,7 @@ const sources = [
     new Facebook('unicorn_face', 'Pegasus', "RestoranPegasus"),
     new Facebook('bike', 'Rataskaevu 16', 'Rataskaevu16'),
     new Facebook('hole', 'Väike Rataskaevu 16', 'VaikeRataskaevu16'),
-    // new Facebook('leaves', 'Rahva Toit', 'rahvatoitttu'),
-    new Link('leaves', 'Rahva toit', 'Come and eat', 'http://rahvatoit.ee/menuu/rahva-toit-roosikrantsi/')
+    new Link('leaves', 'Rahva Toit', 'Come and eat – check the Source link for the menu', 'http://rahvatoit.ee/menuu/rahva-toit-roosikrantsi/')
     // new Facebook('elephant', 'Restoran Elevant', 'restoran.elevant'),
 ];
 
