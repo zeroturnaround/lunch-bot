@@ -45,6 +45,11 @@ module.exports = class LunchBot extends Bot {
             return false;
         }
 
+        // Ignore if no message text
+        if (typeof message.text === "undefined") {
+            return false;
+        }
+
         // Ignore messages not mentioning us
         if (!message.text.includes(`<@${this.bot.id}>`)) {
             return false;
