@@ -2,6 +2,7 @@
 const Bot = require('slackbots');
 const _ = require("lodash");
 const pjson = require('../package.json');
+const os=require('os')
 
 module.exports = class LunchBot extends Bot {
     constructor(settings, sources) {
@@ -105,7 +106,7 @@ module.exports = class LunchBot extends Bot {
     _showVersion(message) {
         this.postMessage(message.channel, undefined, {
             icon_emoji: ":fork_and_knife:",
-            text: "Version: " + pjson.version
+            text: "Version: " + pjson.version + " running at " + os.hostname()
         })
             .catch(err => console.log(err));
     }
