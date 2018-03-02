@@ -207,9 +207,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-lodash@^4.14.2:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+lodash@^4.17.2, lodash@^4.17.5:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
 mime-db@~1.30.0:
   version "1.30.0"
@@ -280,11 +280,12 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-slackbots@^0.5.2:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/slackbots/-/slackbots-0.5.3.tgz#7e98f9a02a7ab1e627c00b7f5a37d0cc7478410f"
+slackbots@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/slackbots/-/slackbots-1.1.0.tgz#e028c0914a23f87600cc51cafb3ad441a4b87bd7"
   dependencies:
     extend "^2.0.1"
+    lodash "^4.17.2"
     request "^2.56.0"
     vow "^0.4.9"
     ws "^1.0.1"
