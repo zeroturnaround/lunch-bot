@@ -1,11 +1,13 @@
 {
   "name": "lunchbot",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lunchbot",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
-    "start:docker": "docker-compose up"
+    "start:docker": "docker-compose up",
+    "build:docker": "docker build -t lunch-bot ."
+
   },
   "author": "Kaspar Falkenberg",
   "license": "ISC",
@@ -17,6 +19,6 @@
     "slackbots": "^0.5.2"
   },
   "engines": {
-    "node": "8.9"
+    "node": "9.5"
   }
 }
