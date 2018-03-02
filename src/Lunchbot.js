@@ -1,6 +1,7 @@
 "use strict";
 const Bot = require('slackbots');
 const _ = require("lodash");
+const pjson = require('../package.json');
 
 module.exports = class LunchBot extends Bot {
     constructor(settings, sources) {
@@ -101,11 +102,25 @@ module.exports = class LunchBot extends Bot {
         .catch(err => console.log(err));
     }
 
+    _showVersion(message) {
+        this.postMessage(message.channel, undefined, {
+            icon_emoji: ":fork_and_knife:",
+            text: "Version: " + pjson.version
+        })
+            .catch(err => console.log(err));
+    }
+
     _onMessage(message) {
         if (this._isValidMessage(message)) {
+
+            if (this._containsAny(message.text, "version")) {
+                this._showVersion(message);
+            }
+
             if (this._containsAny(message.text, this.actionTerms)) {
                 this._showMenus(message);
             }
+
         }
     }
 }
